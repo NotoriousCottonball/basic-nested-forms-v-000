@@ -31,5 +31,5 @@ class PeopleController < ApplicationController
         :address_type
       ]
     )
-    end	  
+  end	  
 end
