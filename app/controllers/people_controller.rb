@@ -19,7 +19,7 @@ class PeopleController < ApplicationController
 
   private
 
- def person_params
+  def person_params
     params.require(:person).permit(:name)	    params.require(:person).permit(
       :name,
       addresses_attributes: [
@@ -31,4 +31,5 @@ class PeopleController < ApplicationController
         :address_type
       ]
     )
-  end	  end
+    end	  
+end
